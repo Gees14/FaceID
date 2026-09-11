@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+tensorflow
+opencv-python
+faiss-cpu
+numpy
+requests
+python-multipart

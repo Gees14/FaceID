@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FaceID POC</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>FaceID POC</h1>
+    <span id="status" class="status status--off">Desconectado</span>
+  </header>
+
+  <main>
+    <section class="camera-panel">
+      <div class="camera-wrap">
+        <video id="video" autoplay playsinline muted></video>
+        <canvas id="overlay"></canvas>
+      </div>
+    </section>
+
+    <aside class="side-panel">
+      <div class="card">
+        <h2>Registrar rostro</h2>
+        <p class="hint">Ubica tu cara en el recuadro y presiona registrar.</p>
+        <input id="nameInput" type="text" placeholder="Nombre de la persona" />
+        <button id="enrollBtn">Registrar rostro</button>
+        <p id="enrollMsg" class="msg"></p>
+      </div>
+
+      <div class="card">
+        <h2>Personas registradas</h2>
+        <ul id="peopleList" class="people-list"></ul>
+      </div>
+    </aside>
+  </main>
+
+  <canvas id="captureCanvas" style="display: none"></canvas>
+
+  <script src="app.js"></script>
+</body>
+</html>

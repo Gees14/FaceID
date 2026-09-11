@@ -1,0 +1,35 @@
+# Modelos descargados (pesados, se descargan con download_models.py)
+backend/models/
+
+# Base vectorial generada en runtime
+backend/data/
+
+# Fotos de prueba para enroll_from_folder.py (datos personales/biometricos,
+# no deben subirse al repo). Se mantiene la carpeta vacia con .gitkeep.
+backend/fotos/*
+!backend/fotos/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.Python
+*.egg-info/
+
+# Entornos virtuales
+venv/
+env/
+.venv/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs y env vars
+*.log
+.env
+
+# Config local de Claude Code (especifica de cada maquina/usuario)
+.claude/settings.local.json
